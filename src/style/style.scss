@@ -22,9 +22,9 @@
 // 	transition: transform 0.3s ease-in-out;
 // }
   
-// .card-wrapper.dragging {
-// 	transform: translateX(-50%) scale(0.9);
-// }
+.card-wrapper.dragging {
+	transform: translateX(-50%) scale(0.9);
+}
   
 // .card {
 // 	width: 300px;

@@ -1,11 +1,12 @@
 import './card.scss';
+import PropTypes from 'prop-types';
 
 const Card = ({ cardData }) => {
 
 	console.log(cardData.id);
 	return (
 		<div
-			className="card rounded-md h-full w-full bg-slate-100 shadow-xl shadow-slate-400"
+			className="card rounded-md h-full w-full bg-slate-100 shadow-md shadow-slate-300 flex justify-arround items-center flex-col"
 			draggable={true}>
 			<img className="object-cover w-full h-2/3 rounded-t-md" src={cardData.image} alt={cardData.name} />
 			<h3 className='card__title'>{cardData.name}</h3>
@@ -15,6 +16,10 @@ const Card = ({ cardData }) => {
 }
 
 export default Card;
+
+Card.propTypes = {
+	cardData: PropTypes.object
+}
 
 // const Card = ({ cardData }) => {
 //   return (
